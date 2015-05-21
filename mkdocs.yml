@@ -1,0 +1,15 @@
+site_name: MkDocs+
+site_description: Examples of integrating MkDocs with 3rd Party Libraries.
+site_author: Bruce Marriner
+
+extra_javascript: []
+extra_css: []
+
+theme: readthedocs
+
+pages:
+    - ['index.md', 'Home']
+    - ['flowchartjs/index.md', 'Flowchart.js']
+    - ['js-sequence-diagrams/index.md', 'js-sequence-diagrams']
+    - ['datatables/index.md',  'DataTables']
+    - ['mermaid/index.md',  'mermaid']
