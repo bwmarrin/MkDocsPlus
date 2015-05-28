@@ -1,7 +1,7 @@
 # Overview
 
 
-[Chartist.js](https://gionkunz.github.io/chartist-js/index.html) is a simple responsive charting library built with SVG. You can find more information about mermaid from it's [website](https://gionkunz.github.io/chartist-js/index.html) or [Github](https://github.com/gionkunz/chartist-js).
+[Chartist.js](https://gionkunz.github.io/chartist-js/index.html) is a simple responsive charting library built with SVG. You can find more information about Chartist.js from it's [website](https://gionkunz.github.io/chartist-js/index.html) or [Github](https://github.com/gionkunz/chartist-js).
 
 
 # Examples
