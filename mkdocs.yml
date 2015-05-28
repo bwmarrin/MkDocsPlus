@@ -13,3 +13,4 @@ pages:
     - ['js-sequence-diagrams/index.md', 'js-sequence-diagrams']
     - ['datatables/index.md',  'DataTables']
     - ['mermaid/index.md',  'mermaid']
+    - ['chartistjs/index.md',  'Chartist.js']
