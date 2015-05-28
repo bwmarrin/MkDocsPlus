@@ -14,3 +14,4 @@ pages:
     - ['datatables/index.md',  'DataTables']
     - ['mermaid/index.md',  'mermaid']
     - ['chartistjs/index.md',  'Chartist.js']
+    - ['chartjs/index.md',  'Chart.js']
