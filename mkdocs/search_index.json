@@ -92,16 +92,31 @@
         }, 
         {
             "location": "/chartistjs/", 
-            "text": "Overview\n\n\nChartist.js\n is a simple responsive charting library built with SVG. You can find more information about mermaid from it's \nwebsite\n or \nGithub\n.\n\n\nExamples", 
+            "text": "Overview\n\n\nChartist.js\n is a simple responsive charting library built with SVG. You can find more information about Chartist.js from it's \nwebsite\n or \nGithub\n.\n\n\nExamples", 
             "title": "Chartist.js"
         }, 
         {
             "location": "/chartistjs/#overview", 
-            "text": "Chartist.js  is a simple responsive charting library built with SVG. You can find more information about mermaid from it's  website  or  Github .", 
+            "text": "Chartist.js  is a simple responsive charting library built with SVG. You can find more information about Chartist.js from it's  website  or  Github .", 
             "title": "Overview"
         }, 
         {
             "location": "/chartistjs/#examples", 
+            "text": "", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/chartjs/", 
+            "text": "Overview\n\n\nChart.js\n is a simple HTML5 Charts using the canvas element. You can find more information about Chart.js from it's \nwebsite\n or \nGithub\n.\n\n\nExamples", 
+            "title": "Chart.js"
+        }, 
+        {
+            "location": "/chartjs/#overview", 
+            "text": "Chart.js  is a simple HTML5 Charts using the canvas element. You can find more information about Chart.js from it's  website  or  Github .", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/chartjs/#examples", 
             "text": "", 
             "title": "Examples"
         }
