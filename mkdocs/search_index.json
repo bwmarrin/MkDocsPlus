@@ -1,0 +1,94 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to the MkDocs+ Project\n\n\nFor information about MkDocs itself or to view the official MkDocs documentation please visit \nmkdocs.org\n.\n\n\nWhat is MkDocs+?\n\n\nWell, it's MkDocs + Something.  If that's not clear, MkDocs+ provides examples of integrating 3rd Party JavaScript libraries with MkDocs. This project started out initially as just a playground where I could test the use of a few javascript libaries and at some point I thought maybe it would be helpful to throw it out on the internet so other people could also see the examples.  There's really nothing super special about this project and most libraries are implemented following their documentation.  However, I hope the examples provided are useful to others somehow.\n\n\nHow to use this site?\n\n\nPlease click on any library name from the menu bar to view examples and in some cases usage information and/or documentation on any special tweaks that were needed.\n\n\nCode\n\n\nThe MkDocs+ Project code is on Github.  You can easily clone a copy and play with the included examples to see exactly how they work.  Each example is held entirely in it's own sub-folder and does not rely on any dependancies outside of that folder with ONE exception.  Both the readthedocs and default MkDocs themes already include jQuery and because of that I am not including it a second time for the examples that require it.\n\n\nCredits\n\n\nFinally, I want to thank the entire MkDocs team for creating MkDocs and give special thanks to d0ugal and waylan for the exceptional support they have provided.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-the-mkdocs-project", 
+            "text": "For information about MkDocs itself or to view the official MkDocs documentation please visit  mkdocs.org .", 
+            "title": "Welcome to the MkDocs+ Project"
+        }, 
+        {
+            "location": "/#what-is-mkdocs", 
+            "text": "Well, it's MkDocs + Something.  If that's not clear, MkDocs+ provides examples of integrating 3rd Party JavaScript libraries with MkDocs. This project started out initially as just a playground where I could test the use of a few javascript libaries and at some point I thought maybe it would be helpful to throw it out on the internet so other people could also see the examples.  There's really nothing super special about this project and most libraries are implemented following their documentation.  However, I hope the examples provided are useful to others somehow.", 
+            "title": "What is MkDocs+?"
+        }, 
+        {
+            "location": "/#how-to-use-this-site", 
+            "text": "Please click on any library name from the menu bar to view examples and in some cases usage information and/or documentation on any special tweaks that were needed.", 
+            "title": "How to use this site?"
+        }, 
+        {
+            "location": "/#code", 
+            "text": "The MkDocs+ Project code is on Github.  You can easily clone a copy and play with the included examples to see exactly how they work.  Each example is held entirely in it's own sub-folder and does not rely on any dependancies outside of that folder with ONE exception.  Both the readthedocs and default MkDocs themes already include jQuery and because of that I am not including it a second time for the examples that require it.", 
+            "title": "Code"
+        }, 
+        {
+            "location": "/#credits", 
+            "text": "Finally, I want to thank the entire MkDocs team for creating MkDocs and give special thanks to d0ugal and waylan for the exceptional support they have provided.", 
+            "title": "Credits"
+        }, 
+        {
+            "location": "/flowchartjs/", 
+            "text": ".pre {\n    display:       block;\n    unicode-bidi:  embed;\n    font-family:   monospace;\n    white-space:   pre;\n}\n\n\n\n\nOverview\n\n\nFlowchart.js\n allows you to draw simple SVG flow chart diagrams from textual representation of the diagram.  You can find more information about Flowchart.js from it's \nwebsite\n or \nGithub\n.\n\n\nExamples\n\n\n\n\n\n\nst=>start: Start|past:>http://www.google.com[blank]\ne=>end: Ende|future:>http://www.google.com\nop1=>operation: My Operation|past\nop2=>operation: Stuff|current\nsub1=>subroutine: My Subroutine|invalid\ncond=>condition: Yes \nor No?|approved:>http://www.google.com\nc2=>condition: Good idea|rejected\nio=>inputoutput: catch something...|future\n\nst->op1(right)->cond\ncond(yes, right)->c2\ncond(no)->sub1(left)->op1\nc2(yes)->io->e\nc2(no)->op2->e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n$(\".diagram\").flowchart();", 
+            "title": "Flowchart.js"
+        }, 
+        {
+            "location": "/flowchartjs/#overview", 
+            "text": "Flowchart.js  allows you to draw simple SVG flow chart diagrams from textual representation of the diagram.  You can find more information about Flowchart.js from it's  website  or  Github .", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/flowchartjs/#examples", 
+            "text": "st=>start: Start|past:>http://www.google.com[blank]\ne=>end: Ende|future:>http://www.google.com\nop1=>operation: My Operation|past\nop2=>operation: Stuff|current\nsub1=>subroutine: My Subroutine|invalid\ncond=>condition: Yes \nor No?|approved:>http://www.google.com\nc2=>condition: Good idea|rejected\nio=>inputoutput: catch something...|future\n\nst->op1(right)->cond\ncond(yes, right)->c2\ncond(no)->sub1(left)->op1\nc2(yes)->io->e\nc2(no)->op2->e      \n$(\".diagram\").flowchart();", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/js-sequence-diagrams/", 
+            "text": "Overview\n\n\njs-sequence-diagrams\n allows you to draws simple SVG sequence diagrams from textual representation of the diagram. You can find more information about js-sequence-diagrams from it's \nwebsite\n or \nGithub\n.\n\n\nExamples\n\n\n\n\n\n\n\n\n\nAlice->Bob: Hello Bob, how are you?\nNote right of Bob: Bob thinks\nBob-->Alice: I am good thanks!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \nvar diagram = Diagram.parse(\"A->B: Does something\");\ndiagram.drawSVG('diagram');\n\n\n\n\n\n$(\".diagram\").sequenceDiagram({theme: 'simple'});", 
+            "title": "js-sequence-diagrams"
+        }, 
+        {
+            "location": "/js-sequence-diagrams/#overview", 
+            "text": "js-sequence-diagrams  allows you to draws simple SVG sequence diagrams from textual representation of the diagram. You can find more information about js-sequence-diagrams from it's  website  or  Github .", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/js-sequence-diagrams/#examples", 
+            "text": "Alice->Bob: Hello Bob, how are you?\nNote right of Bob: Bob thinks\nBob-->Alice: I am good thanks!       \nvar diagram = Diagram.parse(\"A->B: Does something\");\ndiagram.drawSVG('diagram');  \n$(\".diagram\").sequenceDiagram({theme: 'simple'});", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/datatables/", 
+            "text": "Overview\n\n\nDataTables\n is a table enhancing plug-in for the jQuery Javascript library, adding sorting, paging and filtering abilities to plain HTML tables with minimal effort. You can find more information about DataTables from it's \nwebsite\n or \nGithub\n.\n\n\nExamples\n\n\n\n    \n\n        \n\n            \nLibrary\n\n            \nDescription\n\n        \n\n    \n\n    \n\n        \n\n            \nFlowchart.js\n\n            \nAllows you to draw simple SVG flow chart diagrams from textual representation of the diagram.\n\n        \n\n        \n\n            \njs-sequence-diagrams\n\n            \nDraws simple SVG sequence diagrams from textual representation of the diagram \n\n        \n\n        \n\n            \nDataTables\n\n            \nAdd advanced interaction controls to any HTML \n\n        \n\n        \n\n            \nmermaid\n\n            \nGeneration of diagrams and flowcharts from text in a similar manner as markdown\n\n        \n\n        \n\n            \nChartJS\n\n            \ndesc\n\n        \n\n        \n\n            \nVisJS\n\n            \ndesc\n\n        \n\n        \n\n            \nAwesause\n\n            \ndesc\n\n        \n\n        \n\n            \nLib2me\n\n            \ndesc\n\n        \n\n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n$(document).ready( function () { $('#table_id').DataTable(); } );", 
+            "title": "DataTables"
+        }, 
+        {
+            "location": "/datatables/#overview", 
+            "text": "DataTables  is a table enhancing plug-in for the jQuery Javascript library, adding sorting, paging and filtering abilities to plain HTML tables with minimal effort. You can find more information about DataTables from it's  website  or  Github .", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/datatables/#examples", 
+            "text": "Library \n             Description \n         \n     \n     \n         \n             Flowchart.js \n             Allows you to draw simple SVG flow chart diagrams from textual representation of the diagram. \n         \n         \n             js-sequence-diagrams \n             Draws simple SVG sequence diagrams from textual representation of the diagram  \n         \n         \n             DataTables \n             Add advanced interaction controls to any HTML  \n         \n         \n             mermaid \n             Generation of diagrams and flowcharts from text in a similar manner as markdown \n         \n         \n             ChartJS \n             desc \n         \n         \n             VisJS \n             desc \n         \n         \n             Awesause \n             desc \n         \n         \n             Lib2me \n             desc \n         \n          \n$(document).ready( function () { $('#table_id').DataTable(); } );", 
+            "title": "Examples"
+        }, 
+        {
+            "location": "/mermaid/", 
+            "text": "Overview\n\n\nmermaid\n allows you to create diagrams and flowcharts from text in a similar manner as markdown. You can find more information about mermaid from it's \nwebsite\n or \nGithub\n.\n\n\nExamples\n\n\n\ngraph TB\n    A[Hard edge] -->|Link text| B(Round edge)\n    B --> C{Decision}\n    C -->|One| D[Result one]\n    C -->|Two| E[Result two]\n\n\n\n\n\n\n\n\ngraph LR\n    A[Square Rect] -- Link text --> B((Circle))\n    A --> C(Round Rect)\n    B --> D{Rhombus}\n    C --> D\n\n\n\n\n\n\n\n\ngraph TB\n         subgraph one\n         a1-->a2\n         end\n         subgraph two\n         b1-->b2\n         end\n         subgraph three\n         c1-->c2\n         end\n         c1-->a2\n\n\n\n\n\n\n\n\ngraph TB\n    sq[Square shape] --> ci((Circle shape))\n\n    subgraph A subgraph\n        od>Odd shape]-- Two line\nedge comment --> ro\n        di{Diamond with \n line break} -.-> ro(Rounded\nsquare\nshape)\n        di==>ro2(Rounded square shape)\n    end\n\n    %% Notice that no text in shape are added here instead that is appended further down\n    e --> od3>Really long text with linebreak\nin an Odd shape]\n\n    %% Comments after double percent signs\n    e((Inner / circle\nand some odd \nspecial characters)) --> f(,.?!+-*\u0632)\n\n    cyr[Cyrillic]-->cyr2((Circle shape \u041d\u0430\u0447\u0430\u043b\u043e));\n\n     classDef green fill:#9f6,stroke:#333,stroke-width:2px;\n     classDef orange fill:#f96,stroke:#333,stroke-width:4px;\n     class sq,e green\n     class di orange\n\n\n\n\n\n\n\n\nsequenceDiagram\n    Bruce->>Steve: Hey, can we get a raise?\n    Steve-->>Bruce: Sorry, I got The Look.\n    Bruce->>Steve: What look?\n    Steve-->>Bruce: The Look.\n    Bruce->>Steve: Uh, what does that mean?\n    Steve-->>Bruce: Nancy gave me The Look.\n    Bruce->>Steve: So, did you even ask her?\n    Steve-->>Bruce: No. I got The Look.\n    Bruce->>Steve: So, do we get our raise or not?\n    Steve-->>Bruce: No. Nothing I can do.\n\n\n\n\n\n\n\n\nsequenceDiagram\n    Alice ->> Bob: Hello Bob, how are you?\n    Bob-->>John: How about you John?\n    Bob--x Alice: I am good thanks!\n    Bob-x John: I am good thanks!\n    Note right of John: Bob thinks a long\nlong time, so long\nthat the text does\nnot fit on a row.\n\n    Bob-->Alice: Checking with John...\n    Alice->John: Yes... John, how are you?  \n\n\n\n\n\n\n\n\nsequenceDiagram\n    loop Daily query\n        Alice->>Bob: Hello Bob, how are you?\n        alt is sick\n            Bob->>Alice: Not so good :(\n        else is well\n            Bob->>Alice: Feeling fresh like a daisy\n        end\n\n        opt Extra response\n            Bob->>Alice: Thanks for asking\n        end\n    end\n\n\n\n\n\n\n\n\nsequenceDiagram\n    participant Alice\n    participant Bob\n    Alice->>John: Hello John, how are you?\n    loop Healthcheck\n        John->>John: Fight against hypochondria\n    end\n    Note right of John: Rational thoughts\nprevail...\n    John-->>Alice: Great!\n    John->>Bob: How about you?\n    Bob-->>John: Jolly good!\n\n\n\n\n\n\n\nGnatt Diagrams don't seem to work for me, I'm still working on this.\n\n\n\ngantt\n    title A Gantt Diagram\n\n    section Section\n    A task           :a1, 2014-01-01, 30d\n    Another task     :after a1  , 20d\n    section Another\n    Task in sec      :2014-01-12  , 12d\n    anther task      : 24d", 
+            "title": "mermaid"
+        }, 
+        {
+            "location": "/mermaid/#overview", 
+            "text": "mermaid  allows you to create diagrams and flowcharts from text in a similar manner as markdown. You can find more information about mermaid from it's  website  or  Github .", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/mermaid/#examples", 
+            "text": "graph TB\n    A[Hard edge] -->|Link text| B(Round edge)\n    B --> C{Decision}\n    C -->|One| D[Result one]\n    C -->|Two| E[Result two]   \ngraph LR\n    A[Square Rect] -- Link text --> B((Circle))\n    A --> C(Round Rect)\n    B --> D{Rhombus}\n    C --> D   \ngraph TB\n         subgraph one\n         a1-->a2\n         end\n         subgraph two\n         b1-->b2\n         end\n         subgraph three\n         c1-->c2\n         end\n         c1-->a2   \ngraph TB\n    sq[Square shape] --> ci((Circle shape))\n\n    subgraph A subgraph\n        od>Odd shape]-- Two line edge comment --> ro\n        di{Diamond with   line break} -.-> ro(Rounded square shape)\n        di==>ro2(Rounded square shape)\n    end\n\n    %% Notice that no text in shape are added here instead that is appended further down\n    e --> od3>Really long text with linebreak in an Odd shape]\n\n    %% Comments after double percent signs\n    e((Inner / circle and some odd  special characters)) --> f(,.?!+-*\u0632)\n\n    cyr[Cyrillic]-->cyr2((Circle shape \u041d\u0430\u0447\u0430\u043b\u043e));\n\n     classDef green fill:#9f6,stroke:#333,stroke-width:2px;\n     classDef orange fill:#f96,stroke:#333,stroke-width:4px;\n     class sq,e green\n     class di orange   \nsequenceDiagram\n    Bruce->>Steve: Hey, can we get a raise?\n    Steve-->>Bruce: Sorry, I got The Look.\n    Bruce->>Steve: What look?\n    Steve-->>Bruce: The Look.\n    Bruce->>Steve: Uh, what does that mean?\n    Steve-->>Bruce: Nancy gave me The Look.\n    Bruce->>Steve: So, did you even ask her?\n    Steve-->>Bruce: No. I got The Look.\n    Bruce->>Steve: So, do we get our raise or not?\n    Steve-->>Bruce: No. Nothing I can do.   \nsequenceDiagram\n    Alice ->> Bob: Hello Bob, how are you?\n    Bob-->>John: How about you John?\n    Bob--x Alice: I am good thanks!\n    Bob-x John: I am good thanks!\n    Note right of John: Bob thinks a long long time, so long that the text does not fit on a row.\n\n    Bob-->Alice: Checking with John...\n    Alice->John: Yes... John, how are you?     \nsequenceDiagram\n    loop Daily query\n        Alice->>Bob: Hello Bob, how are you?\n        alt is sick\n            Bob->>Alice: Not so good :(\n        else is well\n            Bob->>Alice: Feeling fresh like a daisy\n        end\n\n        opt Extra response\n            Bob->>Alice: Thanks for asking\n        end\n    end   \nsequenceDiagram\n    participant Alice\n    participant Bob\n    Alice->>John: Hello John, how are you?\n    loop Healthcheck\n        John->>John: Fight against hypochondria\n    end\n    Note right of John: Rational thoughts prevail...\n    John-->>Alice: Great!\n    John->>Bob: How about you?\n    Bob-->>John: Jolly good!   Gnatt Diagrams don't seem to work for me, I'm still working on this.  \ngantt\n    title A Gantt Diagram\n\n    section Section\n    A task           :a1, 2014-01-01, 30d\n    Another task     :after a1  , 20d\n    section Another\n    Task in sec      :2014-01-12  , 12d\n    anther task      : 24d", 
+            "title": "Examples"
+        }
+    ]
+}

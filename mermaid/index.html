@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>mermaid - MkDocs+</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> MkDocs+</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../flowchartjs/">Flowchart.js</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../js-sequence-diagrams/">js-sequence-diagrams</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../datatables/">DataTables</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">mermaid</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#overview">Overview</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#examples">Examples</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">MkDocs+</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>mermaid</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="overview">Overview</h1>
+<p><a href="http://knsv.github.io/mermaid/">mermaid</a> allows you to create diagrams and flowcharts from text in a similar manner as markdown. You can find more information about mermaid from it's <a href="http://knsv.github.io/mermaid/">website</a> or <a href="https://github.com/knsv/mermaid">Github</a>.</p>
+<h1 id="examples">Examples</h1>
+<div class="mermaid">
+graph TB
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+</div>
+
+<hr>
+
+<div class="mermaid">
+graph LR
+    A[Square Rect] -- Link text --> B((Circle))
+    A --> C(Round Rect)
+    B --> D{Rhombus}
+    C --> D
+</div>
+
+<hr>
+
+<div class="mermaid">
+graph TB
+         subgraph one
+         a1-->a2
+         end
+         subgraph two
+         b1-->b2
+         end
+         subgraph three
+         c1-->c2
+         end
+         c1-->a2
+</div>
+
+<hr>
+
+<div class="mermaid">
+graph TB
+    sq[Square shape] --> ci((Circle shape))
+
+    subgraph A subgraph
+        od>Odd shape]-- Two line<br>edge comment --> ro
+        di{Diamond with <br/> line break} -.-> ro(Rounded<br>square<br>shape)
+        di==>ro2(Rounded square shape)
+    end
+
+    %% Notice that no text in shape are added here instead that is appended further down
+    e --> od3>Really long text with linebreak<br>in an Odd shape]
+
+    %% Comments after double percent signs
+    e((Inner / circle<br>and some odd <br>special characters)) --> f(,.?!+-*ز)
+
+    cyr[Cyrillic]-->cyr2((Circle shape Начало));
+
+     classDef green fill:#9f6,stroke:#333,stroke-width:2px;
+     classDef orange fill:#f96,stroke:#333,stroke-width:4px;
+     class sq,e green
+     class di orange
+</div>
+
+<hr>
+
+<div class="mermaid">
+sequenceDiagram
+    Bruce->>Steve: Hey, can we get a raise?
+    Steve-->>Bruce: Sorry, I got The Look.
+    Bruce->>Steve: What look?
+    Steve-->>Bruce: The Look.
+    Bruce->>Steve: Uh, what does that mean?
+    Steve-->>Bruce: Nancy gave me The Look.
+    Bruce->>Steve: So, did you even ask her?
+    Steve-->>Bruce: No. I got The Look.
+    Bruce->>Steve: So, do we get our raise or not?
+    Steve-->>Bruce: No. Nothing I can do.
+</div>
+
+<hr>
+
+<div markdown="block" class="mermaid">
+sequenceDiagram
+    Alice ->> Bob: Hello Bob, how are you?
+    Bob-->>John: How about you John?
+    Bob--x Alice: I am good thanks!
+    Bob-x John: I am good thanks!
+    Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+
+    Bob-->Alice: Checking with John...
+    Alice->John: Yes... John, how are you?  
+</div>
+
+<hr>
+
+<div markdown="block" class="mermaid">
+sequenceDiagram
+    loop Daily query
+        Alice->>Bob: Hello Bob, how are you?
+        alt is sick
+            Bob->>Alice: Not so good :(
+        else is well
+            Bob->>Alice: Feeling fresh like a daisy
+        end
+
+        opt Extra response
+            Bob->>Alice: Thanks for asking
+        end
+    end
+</div>
+
+<hr>
+
+<div class="mermaid">
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts<br/>prevail...
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+</div>
+
+<hr>
+
+<p>Gnatt Diagrams don't seem to work for me, I'm still working on this.</p>
+<div markdown="block" class="mermaid">
+gantt
+    title A Gantt Diagram
+
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    anther task      : 24d
+</div>
+
+<hr>
+
+<p><link rel="stylesheet" type="text/css" href="mermaid.css">
+<script src="mermaid.full.js"></script></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../datatables/" class="btn btn-neutral" title="DataTables"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+    <!-- Copyright etc -->
+    </p>
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../datatables/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>
