@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>DataTables - MkDocs+</title>
+  <title>Chartist.js - MkDocs+</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -65,18 +65,8 @@
 <li>
           
             <li>
-    <li class="toctree-l1 current">
-        <a class="current" href="./">DataTables</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#overview">Overview</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#examples">Examples</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../datatables/">DataTables</a>
         
     </li>
 <li>
@@ -89,8 +79,18 @@
 <li>
           
             <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../chartistjs/">Chartist.js</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Chartist.js</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#overview">Overview</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#examples">Examples</a></li>
+                
+            
+            </ul>
         
     </li>
 <li>
@@ -117,7 +117,7 @@
     
       
     
-    <li>DataTables</li>
+    <li>Chartist.js</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -128,62 +128,20 @@
             <div class="section">
               
                 <h1 id="overview">Overview</h1>
-<p><a href="https://www.datatables.net/">DataTables</a> is a table enhancing plug-in for the jQuery Javascript library, adding sorting, paging and filtering abilities to plain HTML tables with minimal effort. You can find more information about DataTables from it's <a href="https://www.datatables.net/">website</a> or <a href="https://github.com/DataTables/DataTables">Github</a>.</p>
+<p><a href="https://gionkunz.github.io/chartist-js/index.html">Chartist.js</a> is a simple responsive charting library built with SVG. You can find more information about mermaid from it's <a href="https://gionkunz.github.io/chartist-js/index.html">website</a> or <a href="https://github.com/gionkunz/chartist-js">Github</a>.</p>
 <h1 id="examples">Examples</h1>
-<table id="table_id" class="display">
-    <thead>
-        <tr>
-            <th>Library</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Flowchart.js</td>
-            <td>Allows you to draw simple SVG flow chart diagrams from textual representation of the diagram.</td>
-        </tr>
-        <tr>
-            <td>js-sequence-diagrams</td>
-            <td>Draws simple SVG sequence diagrams from textual representation of the diagram </td>
-        </tr>
-        <tr>
-            <td>DataTables</td>
-            <td>Add advanced interaction controls to any HTML </td>
-        </tr>
-        <tr>
-            <td>mermaid</td>
-            <td>Generation of diagrams and flowcharts from text in a similar manner as markdown</td>
-        </tr>
-        <tr>
-            <td>ChartJS</td>
-            <td>desc</td>
-        </tr>
-        <tr>
-            <td>VisJS</td>
-            <td>desc</td>
-        </tr>
-        <tr>
-            <td>Awesause</td>
-            <td>desc</td>
-        </tr>
-        <tr>
-            <td>Lib2me</td>
-            <td>desc</td>
-        </tr>
-    </tbody>
-</table>
+<p><div class="ct-chart ct-perfect-fourth" id="ct-chart1"></div></p>
+<div class="ct-chart ct-perfect-fourth" id="ct-chart2"></div>
 
-<p><link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.css">
-<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.js"></script></p>
-<!-- USE BELOW FOR BootStrap Themes, but there seems to be a slight problem with MkDocs Bootstrap... 
-<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css">
-<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js"></script>
--->
+<div class="ct-chart ct-perfect-fourth" id="ct-chart3"></div>
 
-<script>
-$(document).ready( function () { $('#table_id').DataTable(); } );
-</script>
+<div class="ct-chart ct-perfect-fourth" id="ct-chart4"></div>
+
+<div class="ct-chart ct-perfect-fourth" id="ct-chart5"></div>
+
+<p><link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+<script src="data.js"></script></p>
               
             </div>
           </div>
@@ -191,10 +149,8 @@ $(document).ready( function () { $('#table_id').DataTable(); } );
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../mermaid/" class="btn btn-neutral float-right" title="mermaid"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
-      
-        <a href="../js-sequence-diagrams/" class="btn btn-neutral" title="js-sequence-diagrams"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../mermaid/" class="btn btn-neutral" title="mermaid"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -221,10 +177,8 @@ $(document).ready( function () { $('#table_id').DataTable(); } );
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../js-sequence-diagrams/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../mermaid/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
-      
-        <span style="margin-left: 15px"><a href="../mermaid/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

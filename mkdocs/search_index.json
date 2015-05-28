@@ -89,6 +89,21 @@
             "location": "/mermaid/#examples", 
             "text": "graph TB\n    A[Hard edge] -->|Link text| B(Round edge)\n    B --> C{Decision}\n    C -->|One| D[Result one]\n    C -->|Two| E[Result two]   \ngraph LR\n    A[Square Rect] -- Link text --> B((Circle))\n    A --> C(Round Rect)\n    B --> D{Rhombus}\n    C --> D   \ngraph TB\n         subgraph one\n         a1-->a2\n         end\n         subgraph two\n         b1-->b2\n         end\n         subgraph three\n         c1-->c2\n         end\n         c1-->a2   \ngraph TB\n    sq[Square shape] --> ci((Circle shape))\n\n    subgraph A subgraph\n        od>Odd shape]-- Two line edge comment --> ro\n        di{Diamond with   line break} -.-> ro(Rounded square shape)\n        di==>ro2(Rounded square shape)\n    end\n\n    %% Notice that no text in shape are added here instead that is appended further down\n    e --> od3>Really long text with linebreak in an Odd shape]\n\n    %% Comments after double percent signs\n    e((Inner / circle and some odd  special characters)) --> f(,.?!+-*\u0632)\n\n    cyr[Cyrillic]-->cyr2((Circle shape \u041d\u0430\u0447\u0430\u043b\u043e));\n\n     classDef green fill:#9f6,stroke:#333,stroke-width:2px;\n     classDef orange fill:#f96,stroke:#333,stroke-width:4px;\n     class sq,e green\n     class di orange   \nsequenceDiagram\n    Bruce->>Steve: Hey, can we get a raise?\n    Steve-->>Bruce: Sorry, I got The Look.\n    Bruce->>Steve: What look?\n    Steve-->>Bruce: The Look.\n    Bruce->>Steve: Uh, what does that mean?\n    Steve-->>Bruce: Nancy gave me The Look.\n    Bruce->>Steve: So, did you even ask her?\n    Steve-->>Bruce: No. I got The Look.\n    Bruce->>Steve: So, do we get our raise or not?\n    Steve-->>Bruce: No. Nothing I can do.   \nsequenceDiagram\n    Alice ->> Bob: Hello Bob, how are you?\n    Bob-->>John: How about you John?\n    Bob--x Alice: I am good thanks!\n    Bob-x John: I am good thanks!\n    Note right of John: Bob thinks a long long time, so long that the text does not fit on a row.\n\n    Bob-->Alice: Checking with John...\n    Alice->John: Yes... John, how are you?     \nsequenceDiagram\n    loop Daily query\n        Alice->>Bob: Hello Bob, how are you?\n        alt is sick\n            Bob->>Alice: Not so good :(\n        else is well\n            Bob->>Alice: Feeling fresh like a daisy\n        end\n\n        opt Extra response\n            Bob->>Alice: Thanks for asking\n        end\n    end   \nsequenceDiagram\n    participant Alice\n    participant Bob\n    Alice->>John: Hello John, how are you?\n    loop Healthcheck\n        John->>John: Fight against hypochondria\n    end\n    Note right of John: Rational thoughts prevail...\n    John-->>Alice: Great!\n    John->>Bob: How about you?\n    Bob-->>John: Jolly good!   Gnatt Diagrams don't seem to work for me, I'm still working on this.  \ngantt\n    title A Gantt Diagram\n\n    section Section\n    A task           :a1, 2014-01-01, 30d\n    Another task     :after a1  , 20d\n    section Another\n    Task in sec      :2014-01-12  , 12d\n    anther task      : 24d", 
             "title": "Examples"
+        }, 
+        {
+            "location": "/chartistjs/", 
+            "text": "Overview\n\n\nChartist.js\n is a simple responsive charting library built with SVG. You can find more information about mermaid from it's \nwebsite\n or \nGithub\n.\n\n\nExamples", 
+            "title": "Chartist.js"
+        }, 
+        {
+            "location": "/chartistjs/#overview", 
+            "text": "Chartist.js  is a simple responsive charting library built with SVG. You can find more information about mermaid from it's  website  or  Github .", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/chartistjs/#examples", 
+            "text": "", 
+            "title": "Examples"
         }
     ]
 }
