@@ -86,8 +86,8 @@ text.actor {
 }
 /** Section styling */
 .section {
-  stroke: none;
-  /* opacity: 0.2;  */
+/*  stroke: none;
+  opacity: 0.2;  */
 /* COMMENTED BECAUSE INTERACTS POORLY WITH READTHEDOCS 
  * BUT IT MAY BE NEEDED FOR GNATT DIAGRAMS, THOSE STILL
  * DON'T WORK RIGHT.
