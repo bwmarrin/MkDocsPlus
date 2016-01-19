@@ -133,8 +133,6 @@ sequenceDiagram
 <hr>
 
 
-Gnatt Diagrams don't seem to work for me, I'm still working on this.
-
 <div markdown="block" class="mermaid">
 gantt
     title A Gantt Diagram
@@ -151,4 +149,5 @@ gantt
 
 
 <link rel="stylesheet" type="text/css" href="mermaid.css">
-<script src="mermaid.full.js"></script>
+<script src="mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
