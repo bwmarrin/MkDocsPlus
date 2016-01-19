@@ -88,7 +88,7 @@ text.actor {
 .section {
 /* NOTE : removed because this causes problems with readthedocs theme
     stroke: none; 
-  opacity: 0.2;A 
+  opacity: 0.2;
   */
 }
 .section0 {
