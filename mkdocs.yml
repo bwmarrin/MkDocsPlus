@@ -8,13 +8,19 @@ repo_url: https://github.com/bwmarrin/MkDocsPlus
 extra_javascript: []
 extra_css: []
 
+dev_addr: 0.0.0.0:8000
+
+markdown_extensions:
+      - fontawesome_markdown
+
 theme: readthedocs
 
 pages:
-    - ['index.md', 'Home']
-    - ['flowchartjs/index.md', 'Flowchart.js']
-    - ['js-sequence-diagrams/index.md', 'js-sequence-diagrams']
-    - ['datatables/index.md',  'DataTables']
-    - ['mermaid/index.md',  'mermaid']
-    - ['chartistjs/index.md',  'Chartist.js']
-    - ['chartjs/index.md',  'Chart.js']
+    - 'Home': 'index.md'        
+    - 'Flowchart' : 'flowchartjs/index.md'
+    - 'js-sequence-diagrams' : 'js-sequence-diagrams/index.md'
+    - 'DataTables' : 'datatables/index.md'  
+    - 'mermaid' : 'mermaid/index.md' 
+    - 'Chartist.js' : 'chartistjs/index.md' 
+    - 'Chart.js' : 'chartjs/index.md'  
+    - 'Font Awesome' : 'fontawesome/index.md'
