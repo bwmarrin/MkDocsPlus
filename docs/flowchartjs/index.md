@@ -3,7 +3,7 @@
 
 [Flowchart.js](http://flowchart.js.org) allows you to draw simple SVG flow chart diagrams from textual representation of the diagram.  You can find more information about Flowchart.js from it's [website](http://flowchart.js.org) or [Github](https://github.com/adrai/flowchart.js).
 
-# Requirements
+#### Style / Javascript Used
 
 ```
 <style>
