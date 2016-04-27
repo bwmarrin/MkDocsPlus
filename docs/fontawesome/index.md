@@ -1,8 +1,15 @@
 # Overview
 
 
-[Font Awesome](https://fortawesome.github.io)
+[Font Awesome](https://fortawesome.github.io) Font Awesome gives you scalable
+ vector icons that can instantly be customized -- size, color, drop shadow, and 
+anything that can be done with the power of CSS.
 
+[Font Awesome Markdown](http://bmcorser.github.io/fontawesome-markdown/) A 
+Markdown extension that looks for things like `:fa-coffee:` and replaces them 
+with the Font Awesome icon markup.
+
+# Examples
 
 ** These examples use the normal font awesome markup. **
 ```
