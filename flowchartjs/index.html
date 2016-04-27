@@ -70,6 +70,9 @@
                 <li class="toctree-l3"><a href="#overview">Overview</a></li>
                 
             
+                <li class="toctree-l3"><a href="#requirements">Requirements</a></li>
+                
+            
                 <li class="toctree-l3"><a href="#examples">Examples</a></li>
                 
             
@@ -156,7 +159,25 @@
           <div role="main">
             <div class="section">
               
-                <style>
+                <h1 id="overview">Overview</h1>
+<p><a href="http://flowchart.js.org">Flowchart.js</a> allows you to draw simple SVG flow chart diagrams from textual representation of the diagram.  You can find more information about Flowchart.js from it's <a href="http://flowchart.js.org">website</a> or <a href="https://github.com/adrai/flowchart.js">Github</a>.</p>
+<h1 id="requirements">Requirements</h1>
+<pre><code>&lt;style&gt;
+.pre {
+    display:       block;
+    unicode-bidi:  embed;
+    font-family:   monospace;
+    white-space:   pre;
+}
+&lt;/style&gt;
+
+
+&lt;script src =&quot;raphael.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src =&quot;flowchart.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src =&quot;jquery-plugin.js&quot;&gt;&lt;/script&gt;
+</code></pre>
+
+<style>
 .pre {
     display:       block;
     unicode-bidi:  embed;
@@ -165,10 +186,37 @@
 }
 </style>
 
-<h1 id="overview">Overview</h1>
-<p><a href="http://flowchart.js.org">Flowchart.js</a> allows you to draw simple SVG flow chart diagrams from textual representation of the diagram.  You can find more information about Flowchart.js from it's <a href="http://flowchart.js.org">website</a> or <a href="https://github.com/adrai/flowchart.js">Github</a>.</p>
+<script src ="raphael.min.js"></script>
+
+<script src ="flowchart.min.js"></script>
+
+<script src ="jquery-plugin.js"></script>
+
 <h1 id="examples">Examples</h1>
-<div id="diagram"></div>
+<p>This example embeds the chart data directly inside the markdown file then 
+uses the jquery-plugin to create the chart.</p>
+<pre><code>&lt;div class=&quot;diagram&quot;&gt;
+st=&gt;start: Start|past:&gt;http://www.google.com[blank]
+e=&gt;end: Ende|future:&gt;http://www.google.com
+op1=&gt;operation: My Operation|past
+op2=&gt;operation: Stuff|current
+sub1=&gt;subroutine: My Subroutine|invalid
+cond=&gt;condition: Yes 
+or No?|approved:&gt;http://www.google.com
+c2=&gt;condition: Good idea|rejected
+io=&gt;inputoutput: catch something...|future
+
+st-&gt;op1(right)-&gt;cond
+cond(yes, right)-&gt;c2
+cond(no)-&gt;sub1(left)-&gt;op1
+c2(yes)-&gt;io-&gt;e
+c2(no)-&gt;op2-&gt;e
+&lt;/div&gt;
+
+&lt;script&gt;
+$(&quot;.diagram&quot;).flowchart();
+&lt;/script&gt;
+</code></pre>
 
 <div class="diagram">
 st=>start: Start|past:>http://www.google.com[blank]
@@ -188,16 +236,44 @@ c2(yes)->io->e
 c2(no)->op2->e
 </div>
 
-<script src ="raphael-min.js"></script>
-
-<script src ="flowchart-1.4.0.js"></script>
-
-<script src ="jquery-plugin.js"></script>
-
-<script src ="data.js"></script>
-
 <script>
 $(".diagram").flowchart();
+</script>
+
+<p><hr>
+This example creates the graph entirely from javascript</p>
+<pre><code>&lt;div id=&quot;diagram&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+var code    = 'st=&gt;start: Start\n'
+            + 'e=&gt;end\n'
+            + 'op=&gt;operation: My Operation\n'
+            + 'cond=&gt;condition: Yes or No?\n'
+
+            + 'st-&gt;op-&gt;cond\n'
+            + 'cond(yes)-&gt;e\n'
+            + 'cond(no)-&gt;op\n'
+         ;
+
+var diagram = flowchart.parse(code); 
+diagram.drawSVG('diagram',{theme: 'hand'});
+&lt;/script&gt;
+</code></pre>
+
+<div id="diagram"></div>
+
+<script>
+var code    = 'st=>start: Start\n'
+            + 'e=>end\n'
+            + 'op=>operation: My Operation\n'
+            + 'cond=>condition: Yes or No?\n'
+
+            + 'st->op->cond\n'
+            + 'cond(yes)->e\n'
+            + 'cond(no)->op\n'
+         ;
+
+var diagram = flowchart.parse(code); 
+diagram.drawSVG('diagram',{theme: 'hand'});
 </script>
               
             </div>
