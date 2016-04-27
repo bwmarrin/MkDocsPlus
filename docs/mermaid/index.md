@@ -4,7 +4,13 @@
 [mermaid](http://knsv.github.io/mermaid/) allows you to create diagrams and flowcharts from text in a similar manner as markdown. You can find more information about mermaid from it's [website](http://knsv.github.io/mermaid/) or [Github](https://github.com/knsv/mermaid).
 
 
+<link rel="stylesheet" type="text/css" href="mermaid.css">
+<script src="mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script>
+
+
 # Examples
+
 
 
 <div class="mermaid">
@@ -94,7 +100,7 @@ sequenceDiagram
     Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
 
     Bob-->Alice: Checking with John...
-    Alice->John: Yes... John, how are you?	
+    Alice->John: Yes... John, how are you?  
 </div>
 <hr>
 
@@ -147,7 +153,15 @@ gantt
 
 <hr>
 
+# Instructions
+This was accomplished just by including the mermaid.min.js and mermain.css files
+with one slight modification to the mermain.css file which is shown below.
 
-<link rel="stylesheet" type="text/css" href="mermaid.css">
-<script src="mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
+```
+/** Section styling */
+.section {
+  stroke: none; 
+/* below commented out because it conflicts with the readthedocs theme */
+/*  opacity: 0.2; */
+}
+```
