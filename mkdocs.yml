@@ -17,7 +17,7 @@ theme: readthedocs
 
 pages:
     - 'Home': 'index.md'        
-    - 'Flowchart' : 'flowchartjs/index.md'
+    - 'flowchart.js' : 'flowchartjs/index.md'
     - 'js-sequence-diagrams' : 'js-sequence-diagrams/index.md'
     - 'DataTables' : 'datatables/index.md'  
     - 'mermaid' : 'mermaid/index.md' 
