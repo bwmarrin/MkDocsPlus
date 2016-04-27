@@ -94,6 +94,9 @@
                 <li class="toctree-l3"><a href="#examples">Examples</a></li>
                 
             
+                <li class="toctree-l3"><a href="#instructions">Instructions</a></li>
+                
+            
             </ul>
         
     </li>
@@ -158,6 +161,9 @@
               
                 <h1 id="overview">Overview</h1>
 <p><a href="http://knsv.github.io/mermaid/">mermaid</a> allows you to create diagrams and flowcharts from text in a similar manner as markdown. You can find more information about mermaid from it's <a href="http://knsv.github.io/mermaid/">website</a> or <a href="https://github.com/knsv/mermaid">Github</a>.</p>
+<p><link rel="stylesheet" type="text/css" href="mermaid.css">
+<script src="mermaid.min.js"></script>
+<script>mermaid.initialize({startOnLoad:true});</script></p>
 <h1 id="examples">Examples</h1>
 <div class="mermaid">
 graph TB
@@ -299,9 +305,16 @@ gantt
 
 <hr>
 
-<p><link rel="stylesheet" type="text/css" href="mermaid.css">
-<script src="mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script></p>
+<h1 id="instructions">Instructions</h1>
+<p>This was accomplished just by including the mermaid.min.js and mermain.css files
+with one slight modification to the mermain.css file which is shown below.</p>
+<pre><code>/** Section styling */
+.section {
+  stroke: none; 
+/* below commented out because it conflicts with the readthedocs theme */
+/*  opacity: 0.2; */
+}
+</code></pre>
               
             </div>
           </div>
