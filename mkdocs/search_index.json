@@ -33,7 +33,7 @@
         {
             "location": "/flowchartjs/", 
             "text": ".pre {\n    display:       block;\n    unicode-bidi:  embed;\n    font-family:   monospace;\n    white-space:   pre;\n}\n\n\n\n\nOverview\n\n\nFlowchart.js\n allows you to draw simple SVG flow chart diagrams from textual representation of the diagram.  You can find more information about Flowchart.js from it's \nwebsite\n or \nGithub\n.\n\n\nExamples\n\n\n\n\n\n\nst=>start: Start|past:>http://www.google.com[blank]\ne=>end: Ende|future:>http://www.google.com\nop1=>operation: My Operation|past\nop2=>operation: Stuff|current\nsub1=>subroutine: My Subroutine|invalid\ncond=>condition: Yes \nor No?|approved:>http://www.google.com\nc2=>condition: Good idea|rejected\nio=>inputoutput: catch something...|future\n\nst->op1(right)->cond\ncond(yes, right)->c2\ncond(no)->sub1(left)->op1\nc2(yes)->io->e\nc2(no)->op2->e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n$(\".diagram\").flowchart();", 
-            "title": "Flowchart.js"
+            "title": "Flowchart"
         }, 
         {
             "location": "/flowchartjs/#overview", 
@@ -119,6 +119,21 @@
             "location": "/chartjs/#examples", 
             "text": "", 
             "title": "Examples"
+        }, 
+        {
+            "location": "/fontawesome/", 
+            "text": "Overview\n\n\nFont Awesome\n\n\n These examples use the normal font awesome markup. \n\n\ni class=\nfa fa-camera-retro fa-lg\n/i\n fa-lg\n\ni class=\nfa fa-camera-retro fa-2x\n/i\n fa-2x\n\ni class=\nfa fa-camera-retro fa-3x\n/i\n fa-3x\n\ni class=\nfa fa-camera-retro fa-4x\n/i\n fa-4x\n\ni class=\nfa fa-camera-retro fa-5x\n/i\n fa-5x\n\n\n\n\n fa-lg\n\n fa-2x\n\n fa-3x\n\n fa-4x\n\n fa-5x\n\n\n These examples use the fontawesome_markdown extension \n\n\ni 3\n :fa-coffee: and I 3\n :fa-beer: and I'll buy Wayland a ten of both. \n\n\n\n\ni \n3 \n and I \n3 \n and I'll buy Wayland a ten of both. \n\n\n\n\n Reference \n : \nGithub Issue #1\n\n\n Reference \n : \nGithub Issue #2\n\n\n\n\n\n\nInstructions\n\n\nFor the first example, all that is needed is to include the font awesome css \nusing the maxcdn link.  As shown below.\n\n\nlink rel=\nstylesheet\n href=\nhttps://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css\n\n\n\n\n\nFor the 2nd example, you must install the fontawesome_markdown extension with\npip.  Right now version 0.2.5 is the latest but it doesn't work so you have\nto install the latest version from the github repository.  You can do that\nwith the below command\n\n\npip install https://github.com/bmcorser/fontawesome-markdown/archive/master.zip\n\n\n\n\nYou may need to include \n--upgrade\n in the above command if you already have \nthis extension installed.\n\n\nThen add the below to your mkdocs.yml file.\n\n\nmarkdown_extensions:\n      - fontawesome_markdown\n\n\n\n\nThat's it.", 
+            "title": "Font Awesome"
+        }, 
+        {
+            "location": "/fontawesome/#overview", 
+            "text": "Font Awesome   These examples use the normal font awesome markup.   i class= fa fa-camera-retro fa-lg /i  fa-lg i class= fa fa-camera-retro fa-2x /i  fa-2x i class= fa fa-camera-retro fa-3x /i  fa-3x i class= fa fa-camera-retro fa-4x /i  fa-4x i class= fa fa-camera-retro fa-5x /i  fa-5x   fa-lg  fa-2x  fa-3x  fa-4x  fa-5x   These examples use the fontawesome_markdown extension   i 3  :fa-coffee: and I 3  :fa-beer: and I'll buy Wayland a ten of both.   i  3   and I  3   and I'll buy Wayland a ten of both.     Reference   :  Github Issue #1   Reference   :  Github Issue #2", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/fontawesome/#instructions", 
+            "text": "For the first example, all that is needed is to include the font awesome css \nusing the maxcdn link.  As shown below.  link rel= stylesheet  href= https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css   For the 2nd example, you must install the fontawesome_markdown extension with\npip.  Right now version 0.2.5 is the latest but it doesn't work so you have\nto install the latest version from the github repository.  You can do that\nwith the below command  pip install https://github.com/bmcorser/fontawesome-markdown/archive/master.zip  You may need to include  --upgrade  in the above command if you already have \nthis extension installed.  Then add the below to your mkdocs.yml file.  markdown_extensions:\n      - fontawesome_markdown  That's it.", 
+            "title": "Instructions"
         }
     ]
 }
